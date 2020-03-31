@@ -51,3 +51,8 @@ const createSkillOption = (item) => {
 const removeSkill = (div) => {
     div.parentNode.removeChild(div)
 }
+
+const removeFirstSkill = (id) => {
+    const div = document.getElementById(id)
+    removeSkill(div)
+}
